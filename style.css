@@ -1,0 +1,226 @@
+*
+{
+	margin: 0;
+	padding: 0;
+
+}
+body
+{
+	position: relative;
+}
+.home-cont
+{
+	height: 120vh;
+	width: 100%;
+	background: url(hero.jpg) no-repeat;
+	background-size: cover;
+}
+.nav
+{
+	height: 20vh;
+	width: 100%;
+	background:linear-gradient(180deg, rgba(0, 0, 0, 1.0) rgba(0, 0, 0, .5));
+	display: flex;
+	align-items: center;
+	gap: 60vw;
+
+}
+logo
+{   
+
+	margin-left: 50px;
+	margin-top: 10vh;
+}
+.b1
+{   
+	height: 8vh;
+	width: 20vw;
+	background-color: white;
+	font-size: 2.5vmin;
+	font-weight: 900;
+    border-radius: 35px;
+   cursor: pointer;
+	color:crimson;
+	border: 1.5px solid black;
+    z-index: 1;
+    position: relative;
+    transition: all 2s ease;
+
+}
+.b1 a
+{
+	text-decoration: none;
+	color: crimson;
+}
+.b1 a:hover
+{
+	color: white;
+}
+.b1:hover
+{
+	border: 2px solid silver;
+	box-shadow: 0 0 10px silver;
+	color: white;
+	height: 7vh;
+	width: 17vw;
+	font-size: 2vmin;
+
+}
+.b1::after
+{
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 0;
+	top: 0;
+	right: 0;
+	background: red;
+	box-shadow: 0 0 20px silver;
+	z-index: -1;
+	transition: 0.6s;
+	border-radius: 35px;
+}
+.b1:hover:after
+{
+	left: 0;
+	width: 100%;
+}
+.b2
+{
+	border-radius: 50%;
+	height:13vh;
+	width: 6.5vw;
+	background-color: black;
+	border: 2px solid orangered;
+	margin-left: 4.5vmin;
+	transition: all 1.2s ease;
+	align-items: center;
+	margin-top: 35vh;
+	border-bottom: none;
+
+}
+.button img 
+{
+	position: relative;
+	right: 4vw;
+	bottom: 4.2vh;
+}
+.b2:hover
+{  
+	transform: rotate(360deg);
+	border: 3.5px solid darkred;
+	border-bottom: none;
+	border-right: none;
+}
+h1
+{
+    font-size: 12vmin;
+    color: white;
+    font-family: "teko",sans-serif;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.char
+{
+   height: 450vh;
+   width: 100%;
+   background-image: linear-gradient(to top, black 70%, #2b0505);
+   transition: all 3s ease;
+}
+.char hr
+{
+   align-content: center;
+   justify-content: center;
+   background-image: linear-gradient(353deg,hsla(0, 0%, 100%, .35),#fff 52%,hsla(0, 0%, 100%, .35));
+
+   
+}
+marquee
+{
+	height: 80vh;
+	width: 100%;
+}
+marquee h1 
+{
+   font-size: 80vmin;
+   width: 300%;
+   background-image: linear-gradient(120deg, hsla(0, 0%, 100%, .8),rgba(96,96,96,.65) 40%,rgba(3, 0, 0, 0));
+   background-clip: text;
+   -webkit-background-clip:text;
+   display: block;
+   box-sizing: border-box;
+  -webkit-text-fill-color:transparent;
+}
+.house
+{
+	display: flex;
+}
+.pavilion
+{
+	height:14vh;
+	width: 7vw;
+	background-color: #242222;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+	border: 3.5px solid;
+	border-color:darkred;
+	border-top: none;
+	margin-top: -5vmin;
+   margin-left: -65vmin;
+}
+.pavilion img
+{
+	margin-left: 1rem;
+	height: 60%;
+	margin-top: .9rem;
+	align-items: center;
+	justify-content: center;
+}
+.h
+{
+	font-size: 2rem;
+	color: lightgray;
+	display: flex;
+	text-decoration: underline;
+	gap: 3rem;
+	font-family: "Futura bt",sans-serif;
+	margin-left: 3rem;
+}
+
+
+//*.pro
+{
+	height: 130vh;
+	width: 100%;
+	background-color: transparent;
+	display: flex;
+	gap: 2rem;
+	overflow: hidden;
+}
+//* .pro section
+{
+	height: 110vh;
+	width: 40vw;
+   background-color: yellow;
+   margin-top: 5vh;
+   border-radius: 20px;
+   border: 2px solid whitesmoke;
+   margin-left: 4rem;
+   transition: all .7s ease;
+
+}
+.pro section:hover
+{
+   margin-top: 1vh;
+}
+.pro section img
+{
+   height: 120%;
+   margin-top: -3.5rem;
+   margin-left: 6rem;
+   position: absolute;
+}
+
+*// 
+

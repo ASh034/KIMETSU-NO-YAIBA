@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="https://uploads-ssl.webflow.com/62091a8c8bac4e5727559c42/620c767b7912d0675a944da9_Favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>KIMETSU NO YAIBA</title>
+	
+  
+	
+	<link rel="stylesheet" href="style.css">
+	 <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style> 
+
+    .swiper {
+      width: 100%;
+      height: 140vh;
+      
+    }
+
+    .swiper-slide {
+      text-align: center;
+      width: 120%;
+      height: 110vh;
+      border-radius: 15px;
+     margin-top: 20vh;
+     border: 2px solid silver;
+      display: flex;
+      max-width:40vw;
+      justify-content: center;
+      align-items: center;
+      cursor: grab;
+      margin-left: 5vw;
+      transition: all .3s ease;
+    
+    }
+    .swiper-slide:hover
+    {
+      margin-top: 15vh;
+    }
+
+    .swiper-slide img {
+      height: 110%;
+      width: 80%;
+      margin-top: -7vh;
+      margin-bottom: 12vh;
+      position: relative;
+
+    }
+   
+    .swiper-slide h2
+    {
+      font-size: 3rem;
+      color: whitesmoke;
+      font-family: "futura bt",sans-serif;
+      margin-top: 38rem;
+      position: absolute;
+      margin-left: -16rem;
+      text-decoration: underline;
+    }
+    .thunder
+    {
+      height: 14vh;
+      width: 7vw;
+      border-radius: 50%;
+      position: absolute;
+      margin-left: 30vw;
+      margin-top: 80vh;
+      background-color: whitesmoke;
+      border: 5px solid #FFA600;
+}
+.thunder img
+{
+  margin-top: 2.5vh;
+  height: 9vh;
+}
+</style>
+</head>
+<body>
+<div class="home-cont">
+	<div class="nav">
+		<logo><a href="home.html"><img src="logo.svg"></a></logo>
+		<a href="#char"><button class="b1">KNOW CHARACTERS</button></a>
+	</div>
+	<div class="button">
+	<button class="b2"></button><a><img src="playbutton.svg"></a>
+</div>
+<h1>Welcome!</h1>
+<p style="font-size: 2.6vmin; color: ghostwhite;font-family: 'teko',sans-serif;
+    margin-left: 20px;
+    margin-top: 20px; ">This is a fan website with the purpose to inform about Demon<br> Slayer characters, sectioned for protagonists, <br>pillars, and upper moons.<br>
+Continue exploring this amazing experience.</p>
+</div>
+<div class="char"><br><br><br><br>
+<hr style="width: 50%; height: .4px; margin-left:60vh;" color="silver">
+<marquee scrollamount="50"><h1>CHARACTERS</h1></marquee>
+<br><br><br><br><br><br><br><br><br>
+<div class="house">
+<hr  width="55%" style="margin-left:50vh; margin-bottom: 10vh; height: .1px;" ><section class="pavilion">
+<img src="house.svg"></section></div>
+
+
+	<br><br><br>
+<div class="h"><h3>PROTAGONISTS</h3>
+	<h3>HASHIRAS</h3>
+	<h3>UPPER MOONS</h3>
+	
+</div>
+<br><br><br>
+
+	<!-- Swiper -->
+  <div class="swiper mySwiper" id="char">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background: linear-gradient(to bottom,#f55d49,#e83b07,#bd0606,darkred);">
+       
+        <img src="tanjiro.png">
+      <h2>TANJIRO </h2>
+      <div class="thunder" style="border: 4px solid #e83b07 ;"><img src="sun.svg"></div>
+    </div>
+      <div class="swiper-slide"id="zenitsu" style="background: linear-gradient(to bottom,lightyellow,gold,#fa7f05);"><img src="zenitsu.png" >
+    <h2>ZENITSU </h2>
+    <div class="thunder"><img src="thunder.svg"></div>
+      </div>
+      <div class="swiper-slide"id="inosuke" style="background: linear-gradient(to bottom,lightblue,cyan,darkcyan);"><img src="inosuke.png">
+      <h2>INOSUKE</h2>
+    <div class="thunder"  style="border: 4px solid darkcyan" ;><img src="boar.svg"></div>
+  </div>
+      <div class="swiper-slide" style="background: linear-gradient(to bottom,pink,hotpink,deeppink); "><img src="nezuko.png" style="margin-top: 3vh;">
+      <h2>NEZUKO<h2>
+      <div class="thunder" style="border:4px solid #e83b07;"><img src="icon.svg"></div>
+  </div>
+      <div class="swiper-slide"id="muzan" style="background: linear-gradient(to bottom,#ed3b50,#e0263c,maroon);"><img src="muzan.png" width="100%">
+      <h2>MUZAN</h2>
+    <div class="thunder" style="border-color: maroon;"><img src="2icon.svg"></div></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 26,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      
+      },
+    });
+  </script>
+<!--
+	<section><img src="tanjiro.png"></section>
+	<section class="zenitsu"><img src="zenitsu.png"></section>
+	
+-->
+<div class="bg-hr" style="margin-top:20vh;">
+  <img src="hr.png">
+</div>
+<br><br><br><br><br><br>
+<div>
+  
+</div>
+</div>
+
+
+</div>
+</body>
+</html>
